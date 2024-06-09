@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray">
+
+        <TextView
+            android:id="@+id/companyNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="OpenSansExtrabold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="91dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onBackButtonClick"
+            android:text="Back"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBack">
+
+            <com.github.mikephil.charting.charts.CandleStickChart
+                android:id="@+id/candle_stick_chart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/loadingIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/loadingMessage"
+                android:layout_width="149dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:text="Loading data..."
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/loadingIndicator" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/loadingMessage">
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button1W"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button_selector"
+                        android:onClick="onButtonClick"
+                        android:text="1W"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button1M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button_selector"
+                        android:onClick="onButtonClick"
+                        android:text="1M"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button3M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button_selector"
+                        android:onClick="onButtonClick"
+                        android:text="3M"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button6M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button_selector"
+                        android:onClick="onButtonClick"
+                        android:text="6M"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button1Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button_selector"
+                        android:onClick="onButtonClick"
+                        android:text="1Y"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button5Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button_selector"
+                        android:onClick="onButtonClick"
+                        android:text="5Y"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/button10Y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button_selector"
+                        android:onClick="onButtonClick"
+                        android:text="10Y"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/buttonMAX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button_selector"
+                        android:onClick="onButtonClick"
+                        android:text="MAX"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/frameLayout">
+
+            <TextView
+                android:id="@+id/latestStockInfo"
+                android:layout_width="400dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="OpenSansExtrabold"
+                android:gravity="center"
+                android:text="Latest stock information"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.499"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/dataInfoTextView"
+                android:layout_width="400dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="OpenSansExtrabold"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/latestStockInfo" />
+
+            <TextView
+                android:id="@+id/aboutTextView"
+                android:layout_width="238dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="OpenSansExtrabold"
+                android:gravity="center"
+                android:text="About company"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.499"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dataInfoTextView" />
+
+            <TextView
+                android:id="@+id/companyInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="OpenSans"
+                android:gravity="center"
+                android:text="Company Information"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="@integer/material_motion_duration_short_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aboutTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

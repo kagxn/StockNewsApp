@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "485311881483",
+    "firebase_url": "https://deneme-7073e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "deneme-7073e",
+    "storage_bucket": "deneme-7073e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485311881483:android:a8a8479765260033e3820e",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpEMjE7LgUcnr8HZdSkaDuQTKB4mwU66E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485311881483:android:4eabc552faef027ce3820e",
+        "android_client_info": {
+          "package_name": "com.utkug.stockmarket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpEMjE7LgUcnr8HZdSkaDuQTKB4mwU66E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485311881483:android:e440e137e016e6d8e3820e",
+        "android_client_info": {
+          "package_name": "com.utkug.stockmarket2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpEMjE7LgUcnr8HZdSkaDuQTKB4mwU66E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

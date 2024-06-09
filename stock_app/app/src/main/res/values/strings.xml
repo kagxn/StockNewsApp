@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">finalProject</string>
+    <string name="title">Stock Name/Symbol</string>
+    <string name="clear">Clear</string>
+    <string name="getQuote">Get Quote</string>
+    <string name="favs">Favorites</string>
+    <string name="autoRef">Auto Refresh</string>
+    <string name="autoHint">Type stock name/symbol</string>
+    <string name="apiToken">9b67ef079f456d527f77c69af97df18d7824f608</string>
+    <string name="currentInfoLabel">Current Stock Info</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_api_key" translatable="false">YOUR_NEWS_API_KEY</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="category_business">Positive</string>
+    <string name="category_entertainment">Negative</string>
+    <string name="category_health">Neutral</string>
+    <string name="category_science">Science</string>
+    <string name="category_sports">Sports</string>
+    <string name="category_technology">Technology</string>
+    <string name="news">News</string>
+    <string name="news_dialog_info">Go to Website for more details.</string>
+    <string name="goto_website">Go to Website</string>
+    <string name="search_in_everything">Search in everything…</string>
+</resources>
